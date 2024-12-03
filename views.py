@@ -16,9 +16,10 @@ def init_routes(app):
 
 
 
-    @app.route('/add', methods=['POST'])
+    @app.route('/add', methods=['GET', 'POST'])
     def create_item():
-        # This route should handle adding a new item to the database.
+        if request.method == 'POST':
+            pass
         return render_template('index.html', message='Item added successfully')
 
 
