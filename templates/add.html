@@ -2,16 +2,19 @@
 %}
 <form>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <label for="title" class="form-label">title</label>
+    <input type="text" class="form-control" id="title" name="title" />
+
+    <label for="director" class="form-label">director</label>
+    <input type="text" class="form-control" id="director" name="director" />
+
+    <label for="release_date" class="form-label">release date</label>
     <input
-      type="email"
+      type="integer"
       class="form-control"
-      id="exampleInputEmail1"
-      aria-describedby="emailHelp"
+      id="release_date"
+      name="release_date"
     />
-    <div id="emailHelp" class="form-text">
-      We'll never share your email with anyone else.
-    </div>
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Password</label>
